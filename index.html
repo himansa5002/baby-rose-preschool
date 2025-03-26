@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Rose Pre School</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            font-size: 56px;
+            font-weight: 700;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #f4f4f4;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            background: #ff6f61;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: #ff856c;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 40px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile:hover {
+            transform: translateY(-10px);
+        }
+
+        .img {
+            display: block;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #ff6f61;
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .contact {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 36px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-btn {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Baby Rose Pre School</header>
+    <div class="nav-container">
+        <a href="#profile" class="nav-btn">Info</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+    </div>
+
+    <div class="container">
+        <img src="images 1.jpg" alt="Profile Picture"><br>
+        <section id="profile" class="profile">
+
+            <h2>Profile</h2>
+            <p>I am Nihara Suji. I have a degree in Preschool Teaching with 4+ years of experience.</p>
+        </section>
+
+        <div class="grid-section">
+            <div class="box">
+                <h2>Nursery</h2>
+                <p>Here your child will learn essential preschool skills in a 100% safe environment.</p>
+            </div>
+            <div class="box">
+                <h2>Play Group</h2>
+                <p>We organize fun activities like New Year & Christmas celebrations.</p>
+            </div>
+        </div>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Phone Number: 071XXXXXXXX</p>
+            <p>Email: ssjdj@gmail.com</p>
+        </section>
+    </div>
+</body>
+
+</html>
